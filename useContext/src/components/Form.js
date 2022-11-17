@@ -4,10 +4,10 @@ import { CatContext } from '../App';
 const Form = () => {
     const { onSubmit, setCatAge, setCatName, catName, catAge } = useContext(CatContext);
     return (
-        <div className='container-col width-lg auto border pad-lg mg-top-lg '>
-            <form className='container-col auto pad-lg ' onSubmit={onSubmit}>
-                <div className='container-row align-center'>
-                    <label htmlFor='cat-name' className='width-xsm'>
+        <div className='container-col auto border pad-lg mg-top-lg '>
+            <form className='container-col pad-lg width-md align-center' onSubmit={onSubmit}>
+                <div className='container-row align-center '>
+                    <label htmlFor='cat-name' className='width-xsm left '>
                         Name:
                     </label>
                     <input
@@ -17,8 +17,8 @@ const Form = () => {
                         onChange={(event) => setCatName(event.target.value)}
                     />
                 </div>
-                <div className='container-row align-center'>
-                    <label htmlFor='age' className='width-xsm'>
+                <div className='container-row align-center mg-top-sm'>
+                    <label htmlFor='age' className='width-xsm left '>
                         Age:{' '}
                     </label>
                     <input

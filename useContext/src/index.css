@@ -26,12 +26,23 @@ h5 {
 }
 
 input {
-    height: 30px;
     padding: 5px;
     border-radius: 5px;
+    border: none;
 }
 input:focus {
     outline: none;
+}
+
+.error {
+    display: flex;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #a86565;
+    width: 20vw;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: -40px;
 }
 
 .btn {
@@ -63,7 +74,7 @@ input:focus {
 }
 /* -----Width----- */
 .width-xsm {
-    width: 10vw;
+    width: 4rem;
 }
 .width-sm {
     width: 10vw;
@@ -97,7 +108,11 @@ input:focus {
 .center {
     justify-content: center;
 }
-
+.left {
+    text-align: right;
+    margin-right: 5px;
+}
+/* ------- Margins -------- */
 .mg-top-sm {
     margin-top: 10px;
 }
